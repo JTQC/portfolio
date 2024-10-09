@@ -15,14 +15,14 @@ export default function Nav() {
           </Link>
         </li> 
         <li className="hidden lg:block col-start-11">
-          <Link href="/about">
-            About
-          </Link>          
+            <Link target="_blank" href="https://docs.google.com/document/d/11QqvF5uukFnvcJaQ9HfyB5CcmnkvYXCkbSRSdUuSYoY/edit?usp=sharing">
+              Resume
+            </Link>         
         </li>  
         <li className="hidden lg:block col-start-12">
-          <Link href="/contact">
-            Contact
-          </Link>          
+            <Link target="_blank" href="https://github.com/JTQC">
+              Github
+            </Link >         
         </li>         
       </ul>      
     </nav>
