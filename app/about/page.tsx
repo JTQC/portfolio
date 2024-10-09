@@ -15,7 +15,6 @@ export default async function About() {
     <div className="lg:mx-0 mx-5 lg:content-center col-span-12 mt-10 lg:mt-0 lg:col-span-9 lg:h-[80vh] ">
       <AboutWrapper />
     </div>
-
-</>  
+    </>  
   );
 }
