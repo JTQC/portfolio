@@ -1,8 +1,6 @@
 
 'use client'
 
-
-import React, { useState } from 'react';
 import { useStateContext } from '@/context/state-context';
 
 export default function WorkWrapper() {      

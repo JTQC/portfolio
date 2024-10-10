@@ -1,6 +1,4 @@
 'use client'
-
-import React, { useState } from 'react';
 import WorkItem from './work-item';
 import { WorkType } from '@/types/work-type';
 import { useStateContext } from '@/context/state-context';
