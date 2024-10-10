@@ -1,7 +1,5 @@
 import React from 'react';
 import { PortableTextBlock } from "sanity";
-import { WorkType } from '@/types/work-type';
-import Link from 'next/link'
 
 
 interface WorkItemProps {

@@ -1,7 +1,5 @@
 'use client'
 
-
-import React, { useState } from 'react';
 import { useStateContext } from '@/context/state-context';
 import { PortableText } from '@portabletext/react';
 import 'animate.css';
@@ -9,9 +7,7 @@ import 'animate.css';
 
 export default function IntroWrapper() {        
 
-  const { state } = useStateContext();  
-  
-  console.log('This is image data', state.image);
+  const { state } = useStateContext();   
 
   return (        
     <>
