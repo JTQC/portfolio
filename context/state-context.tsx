@@ -2,12 +2,13 @@
 
 import React, { createContext, useContext, useState } from 'react';
 import { PortableTextBlock } from "sanity";
+import { ImageType } from '@/types/image-type';
 
 // Define the shape of your context state
 interface State {
   headline: string;
-  image: string;
-  overlay: string;
+  image: ImageType;
+  overlay: ImageType;
   content: PortableTextBlock[];
   siteUrl: string;
   isClicked: boolean;
@@ -40,8 +41,8 @@ export const StateProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
   const [state, setState] = useState<State>({
     headline: `I'm James Stahl`,
-    image: 'Empty',
-    overlay: 'Empty',
+    image: { src: '', alt: '' },  // Default value as an empty ImageType object
+    overlay: { src: '', alt: '' },  // Default value as an empty ImageType object
     content: defaultContent, 
     siteUrl: 'Empty',
     isClicked: false,

@@ -3,9 +3,7 @@ import { PortableTextBlock } from "sanity";
 
 
 interface WorkItemProps {
-  headline: string;
-  image: string;
-  overlay: string;
+  headline: string;  
   content: PortableTextBlock[];
   siteUrl: string;
   onClick: () => void;  // Add onClick prop to trigger state update

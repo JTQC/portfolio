@@ -29,9 +29,7 @@ export default function WorkNav({ work }: { work: WorkType[] })  {
           return(            
             <WorkItem
             key={index}
-            headline={job.headline}             
-            image={job.image}
-            overlay={job.overlay}            
+            headline={job.headline}                                
             content={job.content}            
             siteUrl={job.siteUrl}
             onClick={() => handleWorkItemClick(job)}
