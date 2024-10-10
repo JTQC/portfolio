@@ -1,13 +1,9 @@
 'use client'
 
-import Link from 'next/link';
-import { WorkType } from '@/types/work-type';
-import { PortableTextBlock } from "sanity"
+
 import React, { useState } from 'react';
-import client from "@/sanity/lib/client.js"
 import { useStateContext } from '@/context/state-context';
 import { PortableText } from '@portabletext/react';
-import Image from 'next/image'
 import 'animate.css';
 
 
