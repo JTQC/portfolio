@@ -8,18 +8,13 @@ export default function Nav() {
           <Link href="/">
             James_Stahl
           </Link>
-        </li>
+        </li>   
         <li className="hidden lg:block col-start-10">
-          <Link href="/work">
-            Work
-          </Link>
-        </li> 
-        <li className="hidden lg:block col-start-11">
             <Link target="_blank" href="https://docs.google.com/document/d/11QqvF5uukFnvcJaQ9HfyB5CcmnkvYXCkbSRSdUuSYoY/edit?usp=sharing">
               Resume
             </Link>         
         </li>  
-        <li className="hidden lg:block col-start-12">
+        <li className="hidden lg:block col-start-11">
             <Link target="_blank" href="https://github.com/JTQC">
               Github
             </Link >         

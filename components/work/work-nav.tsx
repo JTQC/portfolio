@@ -19,6 +19,7 @@ export default function WorkNav({ work }: { work: WorkType[] })  {
       overlay: job.overlay,
       content: job.content,
       siteUrl: job.siteUrl,
+      isClicked: true,
     });
   };  
 
@@ -30,7 +31,7 @@ export default function WorkNav({ work }: { work: WorkType[] })  {
       </h2>
       <ul>
         {work.map((job: WorkType, index: number ) =>{
-          return(
+          return(            
             <WorkItem
             key={index}
             headline={job.headline}             
@@ -39,7 +40,7 @@ export default function WorkNav({ work }: { work: WorkType[] })  {
             content={job.content}            
             siteUrl={job.siteUrl}
             onClick={() => handleWorkItemClick(job)}
-            />
+            />            
           )
         })}                
       </ul>      

@@ -16,7 +16,7 @@ interface WorkItemProps {
 const WorkItem: React.FC<WorkItemProps> = ({ headline, image, overlay, content, siteUrl, onClick }) => {  
   return (  
     <>
-    <li className="text-2xl my-5 pb-1 border-b border-link text-link" onClick={onClick}>      
+    <li className="text-2xl my-5 pb-1 border-b border-link text-link cursor-pointer" onClick={onClick}>      
       {headline}      
     </li>
     </>    

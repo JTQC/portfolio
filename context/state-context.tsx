@@ -10,6 +10,7 @@ interface State {
   overlay: string;
   content: PortableTextBlock[];
   siteUrl: string;
+  isClicked: boolean;
 }
 
 // Create a context with a default value
@@ -43,6 +44,7 @@ export const StateProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     overlay: 'Empty',
     content: defaultContent, 
     siteUrl: 'Empty',
+    isClicked: false,
   });
 
   return (
