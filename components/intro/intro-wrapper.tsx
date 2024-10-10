@@ -34,22 +34,22 @@ export default function IntroWrapper() {
       {state.isClicked && (
         <>
           <div className="lg:mx-0 mx-5 lg:content-center col-span-12 mt-10 lg:mt-0 lg:col-span-9 lg:h-[80vh">
-            <div className="w-[75%] h-[75%] relative grid grid-cols-4 gap-2">
+            <div className="lg:w-[75%] lg:h-[75%] relative grid grid-cols-4 gap-2">
                 <div className="lg:col-span-2 col-span-4">
                   <a href={state.siteUrl}>
                     <img
-                      className="object-cover"
+                      className="object-cover lg:w-[500px] lg:h-[500px]"
                       src={state.image.src}            
                     />              
                   </a>                  
                 </div>
-                <div className="lg:col-span-2 col-span-4 content-center pl-10">
-                  <h1 className="text-5xl lg:text-5xl text-body font-sans text-link">
+                <div className="lg:col-span-2 col-span-4 content-center lg:pl-10">
+                  <h1 className="text-3xl lg:text-5xl text-body font-sans text-link">
                     <a href={state.siteUrl}>
                       {state.headline}
                     </a>
                   </h1>          
-                  <div className={`w-full leading-7 mt-5 text-xl text-body font-sans`}>
+                  <div className={`w-full leading-7 mt-5 text-xl text-body font-sans list-disc`}>
                     <PortableText 
                     value={state.content}
                     />      
