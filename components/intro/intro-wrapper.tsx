@@ -8,6 +8,7 @@ import client from "@/sanity/lib/client.js"
 import { useStateContext } from '@/context/state-context';
 import { PortableText } from '@portabletext/react';
 import Image from 'next/image'
+import 'animate.css';
 
 
 export default function IntroWrapper() {        
@@ -38,13 +39,13 @@ export default function IntroWrapper() {
                 <div className="lg:col-span-2 col-span-4">
                   <a href={state.siteUrl}>
                     <img
-                      className="object-cover lg:w-[500px] lg:h-[500px]"
+                      className="hover:scale-[1.1] duration-700 object-cover lg:w-[500px] lg:h-[500px]"
                       src={state.image.src}            
                     />              
                   </a>                  
                 </div>
                 <div className="lg:col-span-2 col-span-4 content-center lg:pl-10">
-                  <h1 className="text-3xl lg:text-5xl text-body font-sans text-link">
+                  <h1 className="hover:scale-[1.1] duration-300 text-3xl lg:text-5xl text-body font-sans text-link">
                     <a href={state.siteUrl}>
                       {state.headline}
                     </a>
